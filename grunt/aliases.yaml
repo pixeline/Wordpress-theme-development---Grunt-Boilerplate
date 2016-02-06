@@ -1,3 +1,11 @@
 default:
-  - 'concurrent:first'
-  - 'concurrent:second'
+  - watch 
+init:
+  description: 'Initialize the theme with your new values. Project.json has to be present!'
+  tasks:
+  - curl:wordpress
+  - unzip:wordpress
+  - clean:wordpress
+  - replace:init
+  - build
+  - watch

@@ -1,5 +1,5 @@
 module.exports = {
-	imagemin: {
+	uglify: {
 		options: {
 			title: 'Build complete',
 			// optional

@@ -6,7 +6,7 @@ module.exports = {
 	},
 	parent: {
 		files: {
-			'<%= project.build_dir%><%= project.theme_slug %>/assets/css/style.css': '<%= project.src_dir %>/style.scss'
+			'<%= project.build_dir%>assets/css/style.css': '<%= project.src_dir %>assets/css/style.scss'
 		}
 	}
 };
