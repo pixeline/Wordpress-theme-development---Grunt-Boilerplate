@@ -1,0 +1,14 @@
+# osx noise
+.DS_Store
+profile
+
+
+# project files
+node_modules/
+.ftppass
+build/wordpress/*
+.npm-debug.log
+
+# svn & cvs
+.svn
+CVS
