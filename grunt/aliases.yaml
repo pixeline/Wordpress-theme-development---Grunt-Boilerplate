@@ -1,5 +1,16 @@
 default:
   - watch 
+screenshot:
+  description: 'Generates a screenshot.png file at the root of the theme (size 660 x 880)',
+  tasks:
+  - pageres 
+build:
+  tasks:
+  - replace:cssconfig
+  - copy
+  - scripts
+  - stylesheets
+  - clean:parent_theme_assets
 init:
   description: 'Initialize the theme with your new values. Project.json has to be present!'
   tasks:
@@ -7,5 +18,4 @@ init:
   - unzip:wordpress
   - clean:wordpress
   - replace:init
-  - build
   - watch
