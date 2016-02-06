@@ -1,3 +1,4 @@
+
 window.love = null;
 this.open = false;
 
