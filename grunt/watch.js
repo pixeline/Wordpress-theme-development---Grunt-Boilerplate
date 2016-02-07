@@ -15,6 +15,6 @@ module.exports = {
 	},
 	css: {
 		files: ['<%= project.src_dir %>assets/css/**/*.scss'],
-		tasks: ['sass', 'notify'],
+		tasks: ['newer:sass', 'notify'],
 	},
 };

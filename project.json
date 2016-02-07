@@ -1,8 +1,9 @@
 {
+//	"starter_theme": 'https://github.com/Automattic/_s/archive/master.zip',
 	"theme_name": "Karoo V2 Theme",
 	"theme_slug": "karoo-v2",
 	"mamp_install": "karoo.v2",
-	"hosting_instance": "test.karoo.me",
+	"production_url": "test.karoo.me",
 	"src_dir": "src/",
 	"build_dir": "build/",
 	"release_dir" :"build/release/",

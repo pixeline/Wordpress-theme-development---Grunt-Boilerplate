@@ -9,7 +9,7 @@ module.exports = {
 			authKey: 'devteam'
 		},
 		src: 'build/release',
-		dest: 'domains/<%= project.media_temple %>/html/',
+		dest: 'domains/<%= project.production_url %>/html/',
 		forceVerbose: true
 	},
 	parent_theme: {
@@ -19,7 +19,7 @@ module.exports = {
 			authKey: 'devteam'
 		},
 		src: '<%= project.build_dir %><%= project.theme_slug %>',
-		dest: 'domains/<%= project.media_temple %>/html/wp-content/themes/<%= project.theme_slug %>',
+		dest: 'domains/<%= project.production_url %>/html/wp-content/themes/<%= project.theme_slug %>',
 		forceVerbose: true
 	}
 };

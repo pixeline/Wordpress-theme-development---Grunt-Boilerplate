@@ -1,6 +1,6 @@
 module.exports = {
 	dist: {
-		src: '<%= project.build_dir %>'
+		src: '<%= project.build_dir %>/**/*'
 	},
 	parent_theme_assets: {
 		src: [
@@ -8,6 +8,9 @@ module.exports = {
 		'<%= project.build_dir %><%= project.theme_slug %>/assets/css/**/*.scss']
 	},
 	wordpress: {
-		src: '<%= project.wordpress %>latest.zip'
+		src: ['<%= project.wordpress %>latest.zip', '<%= project.build_dir %>wordpress/wp-content/themes/**/*', '!<%= project.build_dir %>wordpress/wp-content/themes/index.php', '<%= project.build_dir %>wordpress/wp-content/plugins/hello.php' ]
+	},
+	wp_themes: {
+		src: ['<%= project.build_dir %>wordpress/wp-content/themes/**/*', '!<%= project.build_dir %>wordpress/wp-content/themes/index.php'],
 	}
 };

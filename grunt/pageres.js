@@ -1,3 +1,10 @@
+/*
+	grunt-pageres
+	
+	makes screenshots of urls.
+	
+	see https://www.npmjs.com/package/grunt-pageres
+*/
 module.exports = {
 	screenshot: {
 		options: {

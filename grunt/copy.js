@@ -5,7 +5,7 @@ module.exports = {
 	parent: {
 		cwd: '<%= project.src_dir %>',
 		src: '**',
-		dest: '<%= project.build_dir %><%= project.theme_slug %>/',
+		dest: '<%= project.build_dir %>wordpress/wp-content/themes/<%= project.theme_slug %>/',
 		expand: true,
 		dot: true
 	},
