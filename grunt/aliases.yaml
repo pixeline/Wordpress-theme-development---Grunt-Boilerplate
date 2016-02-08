@@ -29,8 +29,9 @@ init:
   - curl:wordpress
   - unzip:wordpress
   - clean:wordpress
-#  - curl:starter_theme
-#  - unzip:starter_theme
   - replace:init
   - build
   - watch
+deploy:
+  - build
+  - ftp_deploy

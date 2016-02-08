@@ -1,7 +1,7 @@
 {
-  "name": "test-grunt-wp",
+  "name": "Wordpress-theme-development---Grunt-Boilerplate",
   "version": "1.0.0",
-  "description": "a test project to experiment using grunt for Wordpress development",
+  "description": "Full automated Wordpress theme development boilerplate.",
   "main": "Gruntfile.js",
   "repository": {
     "type": "git",

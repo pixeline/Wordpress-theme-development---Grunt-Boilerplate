@@ -1,11 +1,15 @@
 {
 //	"starter_theme": 'https://github.com/Automattic/_s/archive/master.zip',
-	"theme_name": "Karoo V2 Theme",
-	"theme_slug": "karoo-v2",
-	"mamp_install": "karoo.v2",
-	"production_url": "test.karoo.me",
+	"theme_name": "Your Theme Name",
+	"theme_slug": "theme-folder-name",
+	"mamp_install": "domain.dev",
+	"production_url": "domain.com",
 	"src_dir": "src/",
 	"build_dir": "build/",
 	"release_dir" :"build/release/",
-	"wordpress"	: "build/"
+	"wordpress"	: "build/",
+	"full_path_to_production_public_folder": "/www",
+	"ftp_username": "username",
+	"ftp_hostname": "ftp.domain.com",
+	"ftp_port": "21"
 }

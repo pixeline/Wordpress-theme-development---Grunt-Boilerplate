@@ -2,24 +2,14 @@
  * Deploy release
  */
 module.exports = {
-	parent_theme_release: {
+	production: {
 		auth: {
-			host: 'ftp.s139934.gridserver.com',
-			port: 21,
-			authKey: 'devteam'
+			host: '<%= project.ftp_hostname %>',
+			port: '<%= project.ftp_port %>',
+			authKey: '<%= project.ftp_username %>'
 		},
 		src: 'build/release',
-		dest: 'domains/<%= project.production_url %>/html/',
-		forceVerbose: true
-	},
-	parent_theme: {
-		auth: {
-			host: 'ftp.s139934.gridserver.com',
-			port: 21,
-			authKey: 'devteam'
-		},
-		src: '<%= project.build_dir %><%= project.theme_slug %>',
-		dest: 'domains/<%= project.production_url %>/html/wp-content/themes/<%= project.theme_slug %>',
+		dest: '<%= project.full_path_to_production_public_folder %>',
 		forceVerbose: true
 	}
 };
